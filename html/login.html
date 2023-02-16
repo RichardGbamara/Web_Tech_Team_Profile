@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Connect - Login</title>
+
+    <link rel="shortcut icon" href="../images/newlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <main>
+        <!-- <div class="left__container">
+            <img src="../images/call__for__attention-removebg-preview.png" alt="">
+        </div> -->
+        <div class="right__container">
+            <div class="container">
+                <img src="../images/Ashesi_Logo-removebg-preview.png" alt="Ashesi Logo" width="80" height="80">
+            <h2>Welcome back!</h2>
+            
+            <form action="authentification.php" method="post" novalidate>
+                <input type="email" name="email" id="email" placeholder="Email" required autocomplete="off" autofocus>
+                <label for="email"><img src="../assets/mdi_email.svg" width="20" height="20"></label>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <label for="password"><img src="../assets/material-symbols_lock.svg" width="20" height="20"></label>
+                
+                <div class="remember">
+                    <input type="checkbox" name="remember__me" id="remember__me">
+                    <p for="remember__me" class="remember__me">Remember Me</p>
+                </div>
+
+                <p class="forgot__password"><a href="#">Forgot Password?</a></p>
+                
+                <button class="login__btn">
+                    Sign In
+                </button>
+                
+                <p class="sign__up">Don't have an account? Sign Up <a href="register.html">here</a></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

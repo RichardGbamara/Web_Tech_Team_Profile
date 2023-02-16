@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Posts - Campus Connect</title>
+    <link rel="shortcut icon" href="../images/newlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <main>
+        <div class="main">
+            <div class="aside__container">
+                <div class="main__logo">
+                    <a href="index.html"><img class="logo" src="../images/newlogo-removebg-preview.png" alt="Ashesi Logo" width="130" height="120"></a>
+                </div>
+                <nav class="primary__navigation">
+                    <div><a href="index.html"><p>Home<br><i class="bi bi-house"></i></p></a></div>
+                    <div><a href="overview.html"><p>Overview<br><i class="bi bi-graph-up-arrow"></i></p></a></div>
+                    <div><a href="add_post.html"><p>Add Post<br><i class="bi bi-plus-square"></i></a></div>
+                    <div><a href="https://www.ashesi.edu.gh"><p>Learn More<br><i class="bi bi-box-arrow-up-right"></i></a></div>
+                    <div><a href=""><p>Get Help<br><i class="bi bi-question-circle"></i></p></a></div>
+                    <div><a href="login.html"><p>Log out<br><i class="bi bi-box-arrow-right"></i></p></a></div>
+                </nav>
+            </div>
+
+            <div class="main__container">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="index__header">
+                    <div class="search">
+                        <input name="search" type="search" class="search_input" id="search" placeholder="Search..." autocomplete="off">
+                        <label for="search"><i class="bi bi-search"></i></label>
+                    </div>
+
+                    <div class="palette">
+                        <i class="bi bi-palette"></i>
+                    </div>
+
+                    <div class="notification">
+                        <i class="bi bi-bell"></i>
+                    </div>
+                    <div class="account">
+                        <i class="bi bi-person"></i>
+                    </div>
+                </div>
+
+                <div class="theme">
+                    <div class="light__mode">
+                        <p style="font-size: 0.7rem; display: flex; justify-content: center; align-items: center;">&nbsp;
+                            <i class="bi bi-moon"  style="font-size: 0.87rem; margin-right: 0.2rem;"></i>Light&nbsp;Mode
+                        </p>
+                    </div>
+                    
+                    <div class="dark__mode">
+                        <p style="font-size: 0.7rem; display: flex; justify-content: center; align-items: center;">&nbsp;
+                            <i class="bi bi-brightness-high" style="font-size: 0.87rem; margin-right: 0.2rem;"></i>Dark&nbsp;Mode
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__content post__container">
+            <div class="heading" id="add">
+                <p>Add Post</p>
+            </div>
+            <div class="content__form">
+                <form action="" method="post">
+                    <div class="upload__details">
+                        <div class="upload_title">
+                            <label for="heading">Title:</label>
+                            <br>
+                            <textarea name="title" id="title" cols="33" rows="3" placeholder="Type your heading here..."></textarea>
+                        </div>
+                        <div class="upload_description">
+                            <label for="description">Description:</label>
+                            <br>
+                            <textarea name="description" id="description" cols="33" rows="10" placeholder="Type your post description here..."></textarea>
+                        </div>
+                        <div class="categories">
+                            <p>
+                                Select problem category:
+                                <select name="problem_category" id="problem_category">
+                                    <option value="general">General</option>
+                                    <option value="academics">Academics</option>
+                                    <option value="sports">Sports</option>
+                                    <option value="hostel">Hostel</option>
+                                    <option value="course_registration">Course Registration</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="categories view_option">
+                            <p>
+                                Select post view option:
+                                <select name="view_option" id="view_option">
+                                    <option value="public">Public</option>
+                                    <option value="private">Private</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="upload__file">
+                        <div class="upload__space">
+                            <i class="bi bi-cloud-arrow-up-fill" id="space"></i>
+                            <!-- <div>Drag file to upload</div> -->
+                        </div>
+
+                        <img src="#" alt="" id="preview_img_post" style="height: 51vh;
+                        width: 40vw; border-radius: 0.3rem; display: none;">
+
+                        <video src="#" id="preview_video_post" controls autoplay muted style="height: 51vh;
+                        width: 40vw; border-radius: 0.3rem; display: none;"></video>
+
+                        <div class="my_uploads">
+                            <div class="uploads">
+                                <p class="hor">Upload image file: <input type="file" name="img__upload" id="img__upload" accept="image/jpeg, image/png, image/jpg"></p>
+                            </div>
+                            <div class="uploads">
+                                <p class="hor">Upload video file: <input type="file" name="video__upload" id="video__upload" accept="video/mp4, video/WebM, video/OGG" placeholder="Choose video file"></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button class="post__btn">POST</button>
+        </div>
+    </main>
+
+    
+    <!-- <script src="../script/script.js"></script> -->
+</body>
+</html>
